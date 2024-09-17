@@ -14,3 +14,14 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 ```
 # Hi there
+
+```{r}
+# Use the diamond dataset
+# use ggplot to plot a histogram on the diamond price
+
+library(ggplot2)
+
+ggplot(data = diamonds) +
+  geom_histogram(mapping = aes(x = price), binwidth = 1000)
+```
+
